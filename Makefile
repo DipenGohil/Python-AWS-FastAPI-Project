@@ -10,6 +10,7 @@ lint:
 	pylint --disable=R,C *.py myLib/*.py
 test:
 	# test
+	python -m pytest -vv --cov=myLib test_logic.py
 build:
 	# build container
 deploy:
